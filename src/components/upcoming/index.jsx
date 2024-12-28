@@ -12,13 +12,19 @@ const Upcoming = () => {
             title: "Valley of The Sun SR",
             period: "February 14 - 16, 2025",
             thumbnailImage: ThumbnailImage1,
-            
+            markImage: MarkImage1
         },
         {
-            
+            title: "Valley of The Sun SR",
+            period: "February 14 - 16, 2025",
+            thumbnailImage: ThumbnailImage1,
+            markImage: MarkImage1
         },
         {
-
+            title: "Valley of The Sun SR",
+            period: "February 14 - 16, 2025",
+            thumbnailImage: ThumbnailImage1,
+            markImage: MarkImage1
         }
     ]
 

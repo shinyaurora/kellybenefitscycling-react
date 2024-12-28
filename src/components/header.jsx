@@ -41,8 +41,8 @@ const Header = () => {
                 {
                     navUrls.map((item, idx) => {
                         return (
-                            <a className={clsx("text-white text-md hover:text-primary")} href={item.url}>
-                                {item}
+                            <a key={idx} className={clsx("text-white text-md hover:text-primary")} href={item.url}>
+                                {item.title}
                             </a>
                         )
                     })
