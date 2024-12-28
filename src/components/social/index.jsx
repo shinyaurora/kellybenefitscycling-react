@@ -48,8 +48,8 @@ const Social = () => {
                 <h1 className="text-3xl font-black text-center my-4">Social Wall</h1>
             </div>
             <div className="bg-[#E4E4E4] py-16 overflow-hidden">
-                <div class="w-full inline-flex flex-nowrap group">
-                    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll group-hover:animation-paused">
+                <div className="w-full inline-flex flex-nowrap group">
+                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll group-hover:animation-paused">
                         {
                             imageList.map((item, idx) => {
                                 return (
@@ -61,7 +61,7 @@ const Social = () => {
                             })
                         }
                     </ul>
-                    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll group-hover:animation-paused" aria-hidden="true">
+                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll group-hover:animation-paused" aria-hidden="true">
                         {
                             imageList.map((item, idx) => {
                                 return (
