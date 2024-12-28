@@ -5,7 +5,7 @@ const Header = () => {
 
     const navUrls = [
         {
-            title: "home",
+            title: "Home",
             url: ""
         },
         {
@@ -35,14 +35,14 @@ const Header = () => {
     ]
 
     return (
-        <div className="absolute top-0 py-8 px-8 md:px-12 xl:px-16 flex items-center justify-between w-full">
-            <img src={Logo} className="" />
-            <div className="flex items-center gap-4 lg:gap-8 xl:gap-16">
+        <div className="absolute top-0 py-4 px-8 md:px-12 xl:px-16 flex items-center justify-between w-full">
+            <img src={Logo} className="w-14" />
+            <div className="flex items-center gap-8 xl:gap-16">
                 {
                     navUrls.map((item, idx) => {
                         return (
-                            <a className={clsx("text-white text-md hover:text-primary")} href={item.url}>
-                                {item}
+                            <a key={idx} className={clsx("text-white text-md font-semibold hover:text-primary")} href={item.url}>
+                                {item.title}
                             </a>
                         )
                     })
