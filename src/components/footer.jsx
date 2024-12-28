@@ -4,7 +4,7 @@ import AppImg from "../assets/images/AccountsPRO-Logo-Workspace-5-2-1-1.png"
 const Footer = () => {
     return (
         <div className="flex h-52 relative justify-between items-center px-4">
-            <div className="w-80">
+            <div className="w-max md:w-80">
                 <img src={FooterImg} className="h-14 md:h-20" />
             </div>
             <div className="flex items-center gap-3 md:gap-8">
@@ -15,7 +15,7 @@ const Footer = () => {
                     <svg class="e-font-icon-svg e-fab-facebook-f" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
                 </div>
             </div>
-            <div className="w-80 flex justify-end">
+            <div className="w-max md:w-80 flex justify-end">
                 <img src={AppImg} className="h-14 md:h-20" />
             </div>
         </div>
