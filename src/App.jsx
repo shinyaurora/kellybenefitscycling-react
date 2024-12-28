@@ -5,6 +5,7 @@ import Target from "./components/target"
 import Result from "./components/result"
 import Upcoming from "./components/upcoming"
 import News from "./components/news"
+import Contact from "./components/contact"
 
 const App = () => {
   return (
@@ -12,9 +13,10 @@ const App = () => {
       <Header />
       <Hero />
       <Target />
-      <Result />
       <Upcoming />
       <News />
+      <Result />
+      <Contact/>
     </Fragment>
   )
 }
