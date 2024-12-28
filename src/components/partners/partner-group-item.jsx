@@ -13,7 +13,9 @@ const PartnerGroup = ({ title, partnerList, size }) => {
                                     
                                     idx === 0 ? 'flex justify-start' : idx === partnerList.length - 1 ? 'flex justify-end' : 'flex justify-center'
                                 )
-                            }>
+                            }
+                                key={idx}
+                            >
                                 <img src={item.img} className={`${size === "large" ? "w-72" : size === "normal" ? "w-28" : "w-20"}`} />
                             </div>
                         )

@@ -1,6 +1,8 @@
 import clsx from "clsx";
 import Logo from "../assets/images/logo.png";
 
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+
 const Header = () => {
 
     const navUrls = [
@@ -46,13 +48,27 @@ const Header = () => {
                             </a>
                         )
                     })
-            }
+                }
             </div>
-            <div className="block md:hidden w-8 h-8 text-white cursor-pointer hover:text-primary">
-                <svg data-slot="icon" fill="none" strokeWidth="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-                </svg>
+            <div className="group relative md:hidden">
+                <button className="w-8 h-8 text-white hover:text-primary">
+                    <svg data-slot="icon" fill="none" strokeWidth="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                    </svg>
+                </button>
+                <div className="hidden group-hover:flex flex-col absolute right-0 bg-white shadow-lg w-40 rounded-md py-2">
+                    {
+                        navUrls.map((item, idx) => {
+                            return (
+                                <a key={idx} className={clsx("text-slate-700 text-sm font-semibold px-4 py-1.5 hover:bg-slate-600 hover:text-white")} href={item.url}>
+                                    {item.title}
+                                </a>
+                            )
+                        })
+                    }
+                </div>
             </div>
+
         </div>
     )
 }
