@@ -5,6 +5,7 @@ import Target from "./components/target"
 import Upcoming from "./components/upcoming"
 import News from "./components/news"
 import Social from "./components/social"
+import Partner from "./components/partners"
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Upcoming />
       <News />
       <Social />
+      <Partner />
     </Fragment>
   )
 }
