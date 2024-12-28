@@ -8,8 +8,28 @@ export default {
     extend: {
       colors: {
         primary: "#09553F"
-      }
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }   
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.animation-paused': {
+          'animation-play-state': 'paused',
+        },
+        '.animation-running': {
+          'animation-play-state': 'running',
+        },
+      });
+    },
+  ],
 }
