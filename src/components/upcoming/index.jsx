@@ -30,7 +30,7 @@ const Upcoming = () => {
 
 
     return (
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 grid grid-cols-1 md:grid-cols-3">
 
         </div>
     )
