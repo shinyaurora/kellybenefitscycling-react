@@ -6,6 +6,9 @@ import Result from "./components/result"
 import Upcoming from "./components/upcoming"
 import News from "./components/news"
 import Contact from "./components/contact"
+import Social from "./components/social"
+import Partner from "./components/partners"
+import Footer from "./components/footer"
 
 const App = () => {
   return (
@@ -15,8 +18,11 @@ const App = () => {
       <Target />
       <Upcoming />
       <News />
+      <Social />
       <Result />
+      <Partner />
       <Contact/>
+      <Footer/>
     </Fragment>
   )
 }
